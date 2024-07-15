@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center aligns the grid horizontally */
+    align-items: center; /* Center aligns the grid vertically */
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px; /* Adjust according to your preference */
+    border: 1px solid black; /* Added border for visualization */
+}
+
+.row {
+    display: flex; /* Ensures columns within the row are flex items */
+    flex: 1 0 auto; /* Flex properties to fill available space */
+    width: 100%; /* Ensures rows take full width of container */
+}
+
+.column {
+    width: calc(100% / 16); /* Each column takes 1/16th of the grid container width */
+    padding-top: calc(100% / 16); /* Maintain square aspect ratio */
+    background-color: white;
+    border: 1px solid black; /* Added border for visualization */
+}
