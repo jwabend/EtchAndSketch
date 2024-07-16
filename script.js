@@ -1,3 +1,12 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const gridContainer = document.getElementById("container");
+
+    gridContainer.addEventListener("mouseover", event => {
+        event.target.style.backgroundColor = "black";
+        event.target.style.borderColor = "white";
+    });
+});
+
 function makeGrid(rowCount, colCount) {
     const container = document.getElementById('container');
 
@@ -14,3 +23,4 @@ function makeGrid(rowCount, colCount) {
     }
 }
 
+makeGrid(16,16)
