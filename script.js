@@ -22,5 +22,4 @@ function makeGrid(rowCount, colCount) {
         }
     }
 }
-
 makeGrid(16,16)
