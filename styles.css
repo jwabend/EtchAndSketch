@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+#main-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column; 
+}
+
+#grid-btn-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin: 10px;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px; 
+    border: 1px solid black; /* Added border for visualization */
+    /* flex: 1 1 auto; */
+}
+
+.row {
+    display: flex; /* Ensures columns within the row are flex items */
+    flex: 1 0 auto; /* Flex properties to fill available space */
+    width: 100%; /* Ensures rows take full width of container */
+}
+
+.column {
+    width: calc(100% / 16); /* Each column takes 1/16th of the grid container width */
+    padding-top: calc(100% / 16); /* Maintain square aspect ratio */
+    background-color: white;
+    border: 1px solid black; /* Added border for visualization */
+}
